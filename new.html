@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="new.js"></script>
+</head>
+<body>
+  <p id="name"></p>
+  <form name="myForm" action="test.html" onsubmit="return validateForm()" method="post">
+    Name: 
+    <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form><br><hr><br>
+  <form action="test.html" method="post">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+  </form><br><br><hr><br>
+  <!--
+    <input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+  -->
+  <input id="class" type="number" min="18" max="40" required>
+  <button onclick="myfunction()">OK</button>
+  <p id="demo"></p>
+  <h3>If value is less than 18 a alert message appear</h3>
+  <h3>and also greater than 40</h3>
+  <div class="crsr"><h1 onclick="this.innerHTML='Again'">Click me</h1></div>
+  <style>
+    .crsr{
+      cursor: pointer;
+    }
+  </style>
+  <input type="button" value="Load new document" onclick="newDoc()">
+  <br><br>
+  <button onclick="myfunction()">Try it</button>
+  <br><br>
+  <button onclick="myfunction()">Try it</button>
+  <p id="non"></p>
+</body>
+</html>
