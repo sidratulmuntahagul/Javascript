@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="test.js"></script>
+</head>
+<body>
+  <h1>Text length</h1>
+  <p id="demo2"></p>
+  <script>
+  var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var sln = txt.length;
+document.getElementById("demo2").innerHTML = sln;
+  </script>
+  <p id="demo"></p>
+  <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">click me</button>
+  <p id="change">The content is change</p>
+  <button type="button" onclick='document.getElementById("change").innerHTML="This is Javascript"'>Click me</button><br><br/>
+  <button type="button" onclick="window.print()">Print this page</button><br/><br/>
+  <button onclick="this.innerHTML=Date()">This is a time</button><br/><br/>
+  <p id="font">This is font size</p>
+  <button type="button" onclick="document.getElementById('font').style.fontSize='35px'">Click me</button>
+
+  <p id="display">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('display').style.display='none'">Click Me!</button>
+<p id="demo2"></p>
+</body>
+</html>
